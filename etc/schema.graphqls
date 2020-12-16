@@ -1,0 +1,39 @@
+
+type Customer {
+    mp_loyalty_program_dashboard:MpLoyaltyProgramDashboardOutput @doc(description: "Loyalty Program Dashboard") @resolver(class: "Mageplaza\\LoyaltyProgramGraphQl\\Model\\Resolver\\Customer")
+}
+
+type Mutation {
+    MpLoyaltyProgramNotification(status: Boolean!): Boolean @doc(description: "Change Email Notify") @resolver(class: "Mageplaza\\LoyaltyProgramGraphQl\\Model\\Resolver\\Notify")
+}
+
+type MpLoyaltyProgramDashboardOutput {
+    benefit: String @doc(description: "Loyalty Program Benefit")
+    statistics: StatisticsOutput @doc(description: "Loyalty Program Statistics")
+}
+
+type StatisticsOutput {
+    program_name: String @doc(description: "Program Name")
+    description: String @doc(description: "Description")
+    is_email_enabled: Int @doc(description: "Is Email Enabled")
+    is_enable_email_notify: Int @doc(description: "Is Enablei Email Notify")
+    to: String @doc(description: "To")
+    cols: [colsOutput] @doc(description: "Cols")
+    rows: [rowsOutput] @doc(description: "Rows")
+}
+
+type colsOutput {
+    name: String @doc(description: "Col Name")
+    duration: String @doc(description: "Col Duration")
+    start: String @doc(description: "Col Start")
+    end: String @doc(description: "Col End")
+}
+
+type rowsOutput {
+    row: [rowOutput] @doc(description: "Row")
+}
+
+type rowOutput {
+    name: String @doc(description: "Row Name")
+    value: String @doc(description: "Row Value")
+}
