@@ -57,7 +57,7 @@ class Notify implements ResolverInterface
     protected $getCustomer;
 
     /**
-     * Customer constructor.
+     * Notify constructor.
      *
      * @param Data $helperData
      * @param ProgramRepositoryInterface $programRepository

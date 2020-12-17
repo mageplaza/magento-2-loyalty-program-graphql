@@ -16,7 +16,7 @@ type StatisticsOutput {
     program_name: String @doc(description: "Program Name")
     description: String @doc(description: "Description")
     is_email_enabled: Int @doc(description: "Is Email Enabled")
-    is_enable_email_notify: Int @doc(description: "Is Enablei Email Notify")
+    is_enable_email_notify: Int @doc(description: "Is Enable Email Notify")
     to: String @doc(description: "To")
     cols: [colsOutput] @doc(description: "Cols")
     rows: [rowsOutput] @doc(description: "Rows")
