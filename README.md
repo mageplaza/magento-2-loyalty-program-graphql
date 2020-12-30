@@ -38,8 +38,8 @@ To perform GraphQL queries in Magento, please do the following requirements:
 
 ## 3. Devdocs
 
-- [Loyalty Program API & examples](https://documenter.getpostman.com/view/10589000/T1DmEepF?version=latest)
-- [Loyalty Program GraphQL & examples](https://documenter.getpostman.com/view/10589000/TVsrEoVD)
+- [Magento 2 Loyalty Program API & examples](https://documenter.getpostman.com/view/10589000/T1DmEepF?version=latest)
+- [Magento 2 Loyalty Program GraphQL & examples](https://documenter.getpostman.com/view/10589000/TVsrEoVD)
 
 
 ## 4. Contribute to this module
